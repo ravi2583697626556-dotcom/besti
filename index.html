@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For Nitisha 💫</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Lora:ital,wght@0,400;0,500;1,400&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- STAR CANVAS -->
+<canvas id="starfield"></canvas>
+
+<!-- SHOOTING STARS -->
+<div class="shoot" style="top:10%;left:5%;animation-duration:6s;animation-delay:1s;"></div>
+<div class="shoot" style="top:25%;left:20%;animation-duration:8s;animation-delay:4s;"></div>
+<div class="shoot" style="top:5%;left:50%;animation-duration:7s;animation-delay:7s;"></div>
+
+<!-- ══ ENVELOPE OVERLAY ══ -->
+<div id="env-overlay">
+  <span class="sp" style="top:8%;left:6%;animation-delay:0s">✨</span>
+  <span class="sp" style="top:14%;right:8%;animation-delay:0.7s">💫</span>
+  <span class="sp" style="bottom:18%;left:5%;animation-delay:1.2s">⭐</span>
+  <span class="sp" style="bottom:12%;right:7%;animation-delay:0.4s">✨</span>
+  <span class="sp" style="top:42%;left:3%;animation-delay:1.8s">💜</span>
+  <span class="sp" style="top:38%;right:3%;animation-delay:1s">🌟</span>
+
+  <p class="env-title">A letter since 07 August 2023 💌</p>
+
+  <div class="env-wrap" id="envWrap" onclick="openEnvelope()">
+    <div class="env-peek" id="envPeek">
+      <div class="pk-to">For,</div>
+      <div class="pk-name">Nitisha 💫</div>
+      <div class="pk-h">✨ 💜 ✨</div>
+    </div>
+
+    <svg class="env-svg" viewBox="0 0 400 270" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="eBody" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#1e1640"/>
+          <stop offset="100%" style="stop-color:#2d1f5e"/>
+        </linearGradient>
+        <linearGradient id="eFlap" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" style="stop-color:#6c3fc5"/>
+          <stop offset="100%" style="stop-color:#3a2080"/>
+        </linearGradient>
+      </defs>
+      <!-- body -->
+      <rect x="10" y="85" width="380" height="175" rx="14" fill="url(#eBody)" stroke="#a98aff" stroke-width="1.5"/>
+      <!-- side triangles -->
+      <polygon points="10,260 200,162 10,85" fill="#2d1f5e" opacity="0.6"/>
+      <polygon points="390,260 200,162 390,85" fill="#271a55" opacity="0.6"/>
+      <!-- bottom V -->
+      <polygon points="10,260 200,168 390,260" fill="#1a1238"/>
+      <!-- flap -->
+      <polygon class="env-flap" points="10,87 200,178 390,87" fill="url(#eFlap)" stroke="#a98aff" stroke-width="1.2"/>
+      <!-- wax seal -->
+      <circle cx="200" cy="178" r="24" fill="#4a2090" stroke="#a98aff" stroke-width="1.5"/>
+      <circle cx="200" cy="178" r="18" fill="#6c3fc5"/>
+      <text x="200" y="184" text-anchor="middle" fill="#ffe9a0" font-size="16" font-family="serif">💜</text>
+      <!-- corner stars -->
+      <text x="30"  y="108" fill="#a98aff" font-size="11" opacity="0.6">✦</text>
+      <text x="362" y="108" fill="#a98aff" font-size="11" opacity="0.6">✦</text>
+      <text x="30"  y="252" fill="#a98aff" font-size="11" opacity="0.6">✦</text>
+      <text x="362" y="252" fill="#a98aff" font-size="11" opacity="0.6">✦</text>
+    </svg>
+  </div>
+
+  <p class="tap-hint" id="tapHint">✦ tap to open ✦</p>
+</div>
+
+<!-- ══ MAIN CONTENT ══ -->
+<div id="main">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-badge">✦ met 07 aug 2023 · telegram → snapchat → instagram ✦</div>
+    <h1 class="hero-title">
+      My Universe,<br/>
+      <span class="gold">Nitisha</span>
+    </h1>
+    <p class="hero-sub">telegram · snapchat · instagram · forever</p>
+
+    <div class="frame-wrap">
+      <div class="photo-ring">
+        <img src="img.jpg" alt="Nitisha"/>
+      </div>
+      <span class="fdeco tl">💫</span>
+      <span class="fdeco tr">✨</span>
+      <span class="fdeco bl">💜</span>
+      <span class="fdeco br">⭐</span>
+    </div>
+  </section>
+
+  <!-- JOURNEY TIMELINE -->
+  <section class="journey">
+    <div class="journey-label">✦ How we found each other ✦</div>
+    <div class="timeline">
+
+      <div class="t-step">
+        <div class="t-card">
+          <span class="app-icon">✈️</span>
+          <h3>Telegram — 07 Aug 2023</h3>
+          <p>Where it all began — August 7th, 2023. A stranger's username, a first message, and something about it just felt different. Two people, one chat, and the universe quietly smiling.</p>
+        </div>
+        <div class="t-dot">1</div>
+        <div style="flex:1"></div>
+      </div>
+
+      <div class="arrow-down">↓</div>
+
+      <div class="t-step">
+        <div style="flex:1"></div>
+        <div class="t-dot">2</div>
+        <div class="t-card">
+          <span class="app-icon">👻</span>
+          <h3>We Moved to Snapchat</h3>
+          <p>The streaks, the snaps, the little moments — we carried the friendship forward. Every notification was a reminder that this connection was growing into something real.</p>
+        </div>
+      </div>
+
+      <div class="arrow-down">↓</div>
+
+      <div class="t-step">
+        <div class="t-card">
+          <span class="app-icon">📸</span>
+          <h3>Then Came Instagram</h3>
+          <p>And finally, Instagram — where the world could see us. The friendship found its forever address, one app at a time.</p>
+        </div>
+        <div class="t-dot">3</div>
+        <div style="flex:1"></div>
+      </div>
+
+      <div class="arrow-down">↓</div>
+
+      <div class="t-step">
+        <div style="flex:1"></div>
+        <div class="t-dot">♾</div>
+        <div class="t-card">
+          <span class="app-icon">💜</span>
+          <h3>Now — Beyond Every App</h3>
+          <p>No platform needed. You're not just a contact. You're my person — and that lives somewhere no app can hold, somewhere only the heart knows.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LETTER -->
+  <section class="letter-section">
+    <div class="letter-card">
+      <div class="letter-ornament">"</div>
+      <span class="letter-tag">~ a letter written across three apps and one heart ~</span>
+      <h2 class="letter-heading">To the girl who found me<br/><span>in all the right places</span></h2>
+      <div class="letter-body">
+        <p>
+          It started on <span class="hl">Telegram, August 7th, 2023</span> — the most unlikely place, the most ordinary moment, and somehow the most extraordinary beginning. You were a stranger on the other side of a screen and I remember thinking, there's something about this person. Something warm, something real, something that made me want to keep talking. And so we did. Long messages, random thoughts, 2am conversations about nothing and everything all at once. Telegram was just the door, but you were the reason I walked through it.
+        </p>
+        <p>
+          Then we found our way to <span class="hl">Snapchat</span> — and the friendship grew its own heartbeat. Streaks became rituals. Snaps became little love letters. The silly ones, the random ones, the "look at this and think of you" ones. You showed up every single day without ever making it feel like an obligation. That's when I knew — this wasn't just a fun internet friendship. This was the real thing. You were the real thing.
+        </p>
+        <p>
+          And then came <span class="hl">Instagram</span> — and I think the universe exhaled. Like it had been holding its breath waiting for us to arrive here, waiting for the official chapter to begin. On Instagram we could see each other's worlds more fully — the photos, the reels, the aesthetic little corners of our lives. But more than the feed and the stories, what I remember most is how easy it was to love who you are. Publicly. Loudly. Without any hesitation.
+        </p>
+        <p>
+          Because here's what I've learned across every app, every message, every voice note — <span class="hl">Nitisha, you are one of those rare people</span> who makes the world around them softer just by being in it. You carry so much warmth in the simplest things — a reply at the right moment, a laugh that happens miles away but still fills a room, a way of caring that asks nothing in return. I've never once had to explain myself fully to you. You just get it. You just get me.
+        </p>
+        <p>
+          From Telegram to Snapchat to Instagram — from a stranger to a best friend to someone I genuinely cannot imagine this life without. You have been one of the most beautiful surprises this universe has given me, and I say that with my whole heart. The apps change. The platforms update. But the way I feel about you? That doesn't need WiFi. That doesn't need a notification. That just is — constant, steady, and completely full of love.
+        </p>
+        <p>
+          I love you so much, Nitisha. More than words on any screen can hold. More than any caption can carry. You are my favourite conversation, my favourite kind of chaos, and my most favourite person. Today, tomorrow, every version of forever. 💜
+        </p>
+      </div>
+      <div class="letter-sign">— yours, always and completely 💫</div>
+    </div>
+  </section>
+
+  <!-- LOVE FINALE -->
+  <section class="finale">
+    <div class="finale-text">I love you so<br/>much, Nitisha</div>
+    <div class="finale-sub">✦ no app needed for that ✦</div>
+    <div class="hearts-burst">💜</div>
+  </section>
+
+  <!-- MEMORY CARDS -->
+  <section class="memory">
+    <h2>Things I'll always remember about you ✦</h2>
+    <div class="cards-row">
+      <div class="mcard"><div class="ico">✈️</div><h3>07 Aug 2023</h3><p>The Telegram message that started it all. The most important "hello" ever sent.</p></div>
+      <div class="mcard"><div class="ico">👻</div><h3>Snapchat Days</h3><p>The streaks, the snaps, the small things that quietly became everything.</p></div>
+      <div class="mcard"><div class="ico">📸</div><h3>Instagram Chapter</h3><p>The feed, the reels, the stories — where the world finally got to see us.</p></div>
+      <div class="mcard"><div class="ico">💬</div><h3>3am Talks</h3><p>The ones that started about nothing and ended with the whole world solved.</p></div>
+      <div class="mcard"><div class="ico">💜</div><h3>Your Heart</h3><p>Warm, giving, no-filter genuine. The rarest kind in a world full of pretending.</p></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="hearts-burst" style="font-size:2.8rem">💜</div>
+    <p>Nitisha — you are loved beyond every app, every mile, every moment</p>
+    <small>made with all the stars in the sky, just for you ✨</small>
+  </footer>
+
+</div><!-- end #main -->
+
+<script src="script.js"></script>
+</body>
+</html>
